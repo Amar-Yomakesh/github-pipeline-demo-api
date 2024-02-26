@@ -34,10 +34,10 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
-						<connectedAppClientId>ba818f86bdb744b59c5379db53d8f4b6</connectedAppClientId>
-                        <connectedAppClientSecret>6e20711aEF7c4778842E85FA9B5544a4</connectedAppClientSecret>
-                        <connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<applicationName>github-pipeline-test-api-4</applicationName>
+						<connectedAppClientId>${client.id}</connectedAppClientId>
+                        			<connectedAppClientSecret>client.secret</connectedAppClientSecret>
+                        			<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						<applicationName>github-pipeline-test-api-5</applicationName>
 						<environment>dev</environment>
 						<businessGroup>NJC POC</businessGroup>
 						<objectStoreV2>true</objectStoreV2>
@@ -46,16 +46,16 @@
 						<workerType>MICRO</workerType>
 						<deploymentTimeout>2000000</deploymentTimeout>
 						<properties>
-							<anypoint.platform.client_id>fda777bd3e3b4fcb93aff995fea2043d</anypoint.platform.client_id>
-                            <anypoint.platform.client_secret>4193AA1986054C548Bf757fd1B7F6f18
-</anypoint.platform.client_secret>
-                            <secure.key>mule</secure.key>
-                            <env>Sandbox</env>
-                            <!-- <api.id>${api.id}</api.id> -->
-                            <!--  Enable Anypoint Monitoring and Position in Visualizer -->
-                            <anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
-                            <anypoint.platform.visualizer.displayName>${project.artifactId}</anypoint.platform.visualizer.displayName>
-                            <anypoint.platform.visualizer.layer>System</anypoint.platform.visualizer.layer>
+							<anypoint.platform.client_id>83efaa5f350b447d93efbc9ae0dd20a1</anypoint.platform.client_id>
+                            				<anypoint.platform.client_secret>1fB23600a7d0403eb7FA09289ff361D1
+							</anypoint.platform.client_secret>
+                            				<secure.key>mule</secure.key>
+                            				<env>dev</env>
+				                            <!-- <api.id>${api.id}</api.id> -->
+				                            <!--  Enable Anypoint Monitoring and Position in Visualizer -->
+				                            <anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
+				                            <anypoint.platform.visualizer.displayName>${project.artifactId}</anypoint.platform.visualizer.displayName>
+				                            <anypoint.platform.visualizer.layer>System</anypoint.platform.visualizer.layer>
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
