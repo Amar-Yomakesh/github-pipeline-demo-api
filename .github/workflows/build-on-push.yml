@@ -60,4 +60,4 @@ jobs:
       uses: actions/checkout@v3
       
     - name: Run a one-line script
-      run: echo Hello, world!
+      run: echo ${{ secrets.CONNECTED_APP_CLIENT_ID }}
